@@ -1,0 +1,14 @@
+<h1>All Submitted Posts</h1>
+
+
+<table>
+     <tr>
+          <th>Post</th>
+     </tr>
+     <% @posts.each do |p| %>
+     <tr>
+          <td><%= p.content %></td>
+          <td><%= link_to 'Show', post_path(p) %></td>
+     </tr>
+     <% end %>
+</table>
